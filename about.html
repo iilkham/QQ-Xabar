@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Обо мне — QQ.XABAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <div class="container site-nav">
+        <a class="logo" href="index.html#top"
+          ><span class="qq"><i>Q</i><b>Q</b></span
+          ><span class="logo-dot">.</span
+          ><span class="logo-name">XABAR</span></a
+        >
+        <nav id="navMenu" class="main-nav">
+          <a class="active" href="index.html#top" data-i18n="home">Главная</a
+          ><a href="index.html#news" data-i18n="news">Новости</a
+          ><a href="index.html#politics" data-i18n="politics">Политика</a
+          ><a href="index.html#society" data-i18n="society">Общество</a
+          ><a href="index.html#sport" data-i18n="sport">Спорт</a>
+        </nav>
+        <div class="header-tools">
+          <button class="icon-btn search-toggle" aria-label="Поиск">
+            <i class="bi bi-search"></i>
+          </button>
+          <div class="weather">
+            <i class="bi bi-sun-fill"></i
+            ><span>Nukus <strong>23°C</strong></span>
+          </div>
+          <select class="language-select" aria-label="Язык">
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+            <option value="kaa">KAA</option></select
+          ><button
+            class="icon-btn menu-toggle"
+            aria-label="Меню"
+            aria-expanded="false"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="search-bar">
+            <label
+              ><i class="bi bi-search"></i
+              ><input
+                id="newsSearch"
+                type="search"
+                placeholder="Поиск по новостям..."
+                data-i18n="search"
+            /></label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="news-ticker" aria-label="Срочные новости">
+      <div class="container ticker-inner">
+        <div class="ticker-window">
+          <div class="ticker-track">
+            <span>В Нукусе стартовала неделя городских инициатив</span><b>•</b
+            ><span
+              >Обновлённое расписание общественного транспорта уже
+              доступно</span
+            ><b>•</b><span>Спортсмены региона вернулись с новыми наградами</span
+            ><b>•</b><span>В Нукусе стартовала неделя городских инициатив</span
+            ><b>•</b
+            ><span
+              >Обновлённое расписание общественного транспорта уже
+              доступно</span
+            ><b>•</b><span>Спортсмены региона вернулись с новыми наградами</span
+            ><b>•</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="container profile-page">
+      <span class="eyebrow">Обо мне</span>
+      <h1>Илхам Кошкарбаев</h1>
+      <p class="article-lead">
+        Я — выпускник <strong>Национального университета Узбекистана</strong> по
+        специальности «Математика и компьютерные науки» (2026).
+      </p>
+      <div class="article-text">
+        <p>
+          Мой путь в разработке начался с интереса к тому, как устроены
+          веб-приложения. Сегодня я уверенно работаю с
+          <strong>PHP/MySQL</strong> на бэкенде, создаю интерактивные интерфейсы
+          на <strong>React</strong>, а также занимаюсь анализом данных с помощью
+          <strong>Python</strong> и Excel.
+        </p>
+        <p>
+          В свободное время изучаю новые технологии, читаю техническую
+          литературу и совершенствую английский (B2). Готов к релокации и
+          командировкам.
+        </p>
+      </div>
+      <a class="profile-button" href="contacts.html"
+        >Связаться со мной <i class="bi bi-arrow-right"></i
+      ></a>
+    </main>
+    <footer><div class="container copyright">© 2026 QQ.XABAR.</div></footer>
+    <script src="header.js"></script>
+    <script src="enhancements.js"></script>
+  </body>
+</html>

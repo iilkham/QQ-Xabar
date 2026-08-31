@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QQ.XABAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-nav">
+        <a class="logo" href="#top"
+          ><span class="qq"><i>Q</i><b>Q</b></span
+          ><span class="logo-dot">.</span
+          ><span class="logo-name">XABAR</span></a
+        >
+        <nav id="navMenu" class="main-nav">
+          <a class="active" href="#top" data-i18n="home">Главная</a
+          ><a href="#news" data-i18n="news">Новости</a
+          ><a href="#politics" data-i18n="politics">Политика</a
+          ><a href="#society" data-i18n="society">Общество</a
+          ><a href="#sport" data-i18n="sport">Спорт</a>
+        </nav>
+        <div class="header-tools">
+          <button class="icon-btn search-toggle" aria-label="Поиск">
+            <i class="bi bi-search"></i>
+          </button>
+          <div class="weather">
+            <i class="bi bi-sun-fill"></i
+            ><span>Nukus <strong>23°C</strong></span>
+          </div>
+          <select class="language-select" aria-label="Язык">
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+            <option value="kaa">KAA</option></select
+          ><button
+            class="icon-btn menu-toggle"
+            aria-label="Меню"
+            aria-expanded="false"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="search-bar">
+            <label
+              ><i class="bi bi-search"></i
+              ><input
+                id="newsSearch"
+                type="search"
+                placeholder="Поиск по новостям..."
+                data-i18n="search"
+            /></label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="news-ticker" aria-label="Срочные новости">
+      <div class="container ticker-inner">
+        <div class="ticker-window">
+          <div class="ticker-track">
+            <span>В Нукусе стартовала неделя городских инициатив</span><b>•</b
+            ><span
+              >Обновлённое расписание общественного транспорта уже
+              доступно</span
+            ><b>•</b><span>Спортсмены региона вернулись с новыми наградами</span
+            ><b>•</b><span>В Нукусе стартовала неделя городских инициатив</span
+            ><b>•</b
+            ><span
+              >Обновлённое расписание общественного транспорта уже
+              доступно</span
+            ><b>•</b><span>Спортсмены региона вернулись с новыми наградами</span
+            ><b>•</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main id="top">
+      <section class="container hero-section">
+        <div class="section-kicker">
+          <span>Главное сегодня</span><time>31 августа 2026</time>
+        </div>
+        <div class="hero-grid">
+          <article class="lead-story">
+            <img src="images/main-news.jpg" alt="Панорама старинного города" />
+            <div class="article-meta">
+              <span>Общество</span><time>Сегодня, 10:45</time>
+            </div>
+            <h1>
+              Нукуc встречает новый сезон: городские пространства становятся
+              комфортнее
+            </h1>
+            <p>
+              Какие проекты меняют ритм столицы Каракалпакстана и что ждёт
+              жителей уже этой осенью.
+            </p>
+          </article>
+          <div class="side-stories">
+            <article class="side-story">
+              <img src="images/side-news-1.jpg" alt="Современное здание" />
+              <div>
+                <div class="article-meta">
+                  <span>Экономика</span><time>09:20</time>
+                </div>
+                <h2>Новые возможности для малого бизнеса региона</h2>
+              </div>
+            </article>
+            <article class="side-story">
+              <img src="images/side-news-2.jpg" alt="Пейзаж у моря" />
+              <div>
+                <div class="article-meta">
+                  <span>Экология</span><time>Вчера</time>
+                </div>
+                <h2>Аральский регион: шаги к устойчивому будущему</h2>
+              </div>
+            </article>
+            <article class="side-story">
+              <img src="images/side-news-3.jpg" alt="Городской парк" />
+              <div>
+                <div class="article-meta">
+                  <span>Город</span><time>Сегодня, 08:10</time>
+                </div>
+                <h2>В Нукусе открыли новый общественный парк</h2>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="container news-section" id="news">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Свежие материалы</span>
+            <h2>Новости</h2>
+          </div>
+          <button id="loadMore" class="text-link">
+            Смотреть ещё <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+        <div class="category-bar">
+          <button class="category active" data-category="all">Все</button
+          ><button class="category" data-category="politics">Политика</button
+          ><button class="category" data-category="economy">Экономика</button
+          ><button class="category" data-category="society">Общество</button
+          ><button class="category" data-category="technology">
+            Технологии</button
+          ><button class="category" data-category="sport">Спорт</button
+          ><button class="category" data-category="world">Мир</button
+          ><button class="category" data-category="culture">Культура</button>
+        </div>
+        <div id="newsGrid" class="news-grid">
+          <article class="news-card" data-category="politics">
+            <img src="images/news-1.jpg" alt="Городская архитектура" />
+            <div class="card-body">
+              <div class="article-meta">
+                <span>Политика</span><time>31 августа</time>
+              </div>
+              <h3>В регионе обсудили приоритеты развития на следующий год</h3>
+              <p>
+                В фокусе — инфраструктура, качество услуг и открытый диалог с
+                жителями.
+              </p>
+            </div>
+          </article>
+          <article class="news-card" data-category="technology">
+            <img src="images/news-2.jpg" alt="Электроника" />
+            <div class="card-body">
+              <div class="article-meta">
+                <span>Технологии</span><time>31 августа</time>
+              </div>
+              <h3>Школьники представили проекты на фестивале технологий</h3>
+              <p>
+                Лучшие команды получили поддержку для дальнейшей разработки
+                идей.
+              </p>
+            </div>
+          </article>
+          <article class="news-card" data-category="sport">
+            <img src="images/news-3.jpg" alt="Спортивная дорожка" />
+            <div class="card-body">
+              <div class="article-meta">
+                <span>Спорт</span><time>30 августа</time>
+              </div>
+              <h3>Спортсмены Каракалпакстана завоевали новые медали</h3>
+              <p>Итоги насыщенной недели на республиканских соревнованиях.</p>
+            </div>
+          </article>
+          <article class="news-card" data-category="economy">
+            <img src="images/news-4.jpg" alt="Рынок" />
+            <div class="card-body">
+              <div class="article-meta">
+                <span>Экономика</span><time>30 августа</time>
+              </div>
+              <h3>Предпринимателям представили новые меры поддержки</h3>
+              <p>
+                Программа включает консультации и льготные финансовые
+                инструменты.
+              </p>
+            </div>
+          </article>
+          <article class="news-card" data-category="culture">
+            <img src="images/news-5.jpg" alt="Орнамент" />
+            <div class="card-body">
+              <div class="article-meta">
+                <span>Культура</span><time>29 августа</time>
+              </div>
+              <h3>Молодые мастера оживляют традиции народного искусства</h3>
+              <p>
+                Выставка собрала авторов, работающих с современным прочтением
+                наследия.
+              </p>
+            </div>
+          </article>
+          <article class="news-card" data-category="society">
+            <img src="images/news-6.jpg" alt="Люди за книгами" />
+            <div class="card-body">
+              <div class="article-meta">
+                <span>Общество</span><time>29 августа</time>
+              </div>
+              <h3>
+                В библиотеках города открылись новые образовательные клубы
+              </h3>
+              <p>Занятия для детей и взрослых будут проходить еженедельно.</p>
+            </div>
+          </article>
+        </div>
+        <p id="emptyState" class="empty-state" hidden>
+          По вашему запросу ничего не найдено.
+        </p>
+      </section>
+      <section class="container popular-section" id="politics">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Выбор читателей</span>
+            <h2>Популярное</h2>
+          </div>
+        </div>
+        <div class="popular-grid">
+          <div class="popular-list">
+            <article>
+              <b>01</b>
+              <div>
+                <span>Общество · Сегодня</span>
+                <h3>Как изменится общественный транспорт Нукуса</h3>
+              </div>
+            </article>
+            <article>
+              <b>02</b>
+              <div>
+                <span>Экономика · Вчера</span>
+                <h3>Гид по осенним ярмаркам и локальным брендам</h3>
+              </div>
+            </article>
+            <article>
+              <b>03</b>
+              <div>
+                <span>Спорт · 29 августа</span>
+                <h3>Юные футболисты готовятся к новому сезону</h3>
+              </div>
+            </article>
+            <article>
+              <b>04</b>
+              <div>
+                <span>Культура · 28 августа</span>
+                <h3>Театр открывает сезон премьерой местного автора</h3>
+              </div>
+            </article>
+            <article>
+              <b>05</b>
+              <div>
+                <span>Мир · 28 августа</span>
+                <h3>Полезные инициативы соседних регионов</h3>
+              </div>
+            </article>
+          </div>
+          <article class="popular-feature">
+            <img src="images/popular-feature.jpg" alt="Городская площадь" />
+            <div>
+              <span>Город · 31 августа</span>
+              <h3>
+                Новые маршруты для прогулок: город открывается с другой стороны
+              </h3>
+              <a href="#news"
+                >Читать материал <i class="bi bi-arrow-up-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="container widgets-row" id="society">
+        <div class="currency-widget">
+          <div class="widget-title">
+            <div>
+              <span class="eyebrow">Финансы</span>
+              <h2>Курс валют</h2>
+            </div>
+            <button>Все курсы <i class="bi bi-arrow-right"></i></button>
+          </div>
+          <div class="rates">
+            <div>
+              <b>USD <small>Доллар США</small></b
+              ><strong>12 300 UZS</strong><em class="up">↑ +0.15%</em>
+            </div>
+            <div>
+              <b>EUR <small>Евро</small></b
+              ><strong>14 200 UZS</strong><em class="down">↓ -0.08%</em>
+            </div>
+            <div>
+              <b>RUB <small>Российский рубль</small></b
+              ><strong>150 UZS</strong><em class="up">↑ +0.03%</em>
+            </div>
+          </div>
+        </div>
+        <aside class="discussed" id="sport">
+          <span class="eyebrow">Сейчас обсуждают</span>
+          <h2>Самое обсуждаемое</h2>
+          <div class="discussed-list">
+            <article>
+              <img src="images/discussed-1.jpg" alt="Микрофон" />
+              <div>
+                <h3>Какие городские события ждут нас в сентябре</h3>
+                <span
+                  ><i class="bi bi-eye"></i> 2.4K
+                  <i class="bi bi-chat"></i> 48</span
+                >
+              </div>
+            </article>
+            <article>
+              <img src="images/discussed-2.jpg" alt="Озеро" />
+              <div>
+                <h3>Маршруты выходного дня: куда отправиться</h3>
+                <span
+                  ><i class="bi bi-eye"></i> 1.8K
+                  <i class="bi bi-chat"></i> 31</span
+                >
+              </div>
+            </article>
+            <article>
+              <img src="images/discussed-3.jpg" alt="Рынок" />
+              <div>
+                <h3>Местные продукты: что выбирают жители</h3>
+                <span
+                  ><i class="bi bi-eye"></i> 1.2K
+                  <i class="bi bi-chat"></i> 19</span
+                >
+              </div>
+            </article>
+            <article>
+              <img src="images/discussed-4.jpg" alt="Ноутбук" />
+              <div>
+                <h3>Цифровые сервисы, которые экономят время</h3>
+                <span
+                  ><i class="bi bi-eye"></i> 986
+                  <i class="bi bi-chat"></i> 14</span
+                >
+              </div>
+            </article>
+          </div>
+        </aside>
+      </section>
+      <section class="container subscribe-section">
+        <div>
+          <span class="eyebrow">Еженедельная подборка</span>
+          <h2>Будьте в курсе последних новостей</h2>
+          <p>Подпишитесь и получайте важные новости прямо на вашу почту.</p>
+        </div>
+        <form id="subscribeForm">
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Ваш email"
+          /><button type="submit">
+            Подписаться <i class="bi bi-arrow-right"></i>
+          </button>
+        </form>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="logo light" href="#top"
+            ><span class="qq"><i>Q</i><b>Q</b></span
+            ><span class="logo-dot">.</span
+            ><span class="logo-name">XABAR</span></a
+          >
+          <p>Новости Каракалпакстана и мира — ясно, быстро, по делу.</p>
+        </div>
+        <div>
+          <h3>Разделы</h3>
+          <a href="#top" data-i18n="home">Главная</a
+          ><a href="#news" data-i18n="news">Новости</a
+          ><a href="#politics" data-i18n="politics">Политика</a
+          ><a href="#society" data-i18n="society">Общество</a
+          ><a href="#sport" data-i18n="sport">Спорт</a>
+        </div>
+        <div>
+          <h3>Информация</h3>
+          <a href="about.html">Обо мне</a><a href="contacts.html">Контакты</a
+          ><a href="admin.html">Для редактора</a>
+        </div>
+        <div>
+          <h3>Социальные сети</h3>
+          <a href="#"><i class="bi bi-telegram"></i> Telegram</a
+          ><a href="#"><i class="bi bi-instagram"></i> Instagram</a
+          ><a href="#"><i class="bi bi-youtube"></i> YouTube</a
+          ><a href="#"><i class="bi bi-facebook"></i> Facebook</a>
+        </div>
+      </div>
+      <div class="container copyright">© 2026 QQ.XABAR.</div>
+    </footer>
+    <button id="toTop" class="to-top" aria-label="Наверх">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+    <script src="enhancements.js"></script>
+  </body>
+</html>

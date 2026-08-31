@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Новость — QQ.XABAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="article-page">
+    <header class="site-header">
+      <div class="container site-nav">
+        <a class="logo" href="index.html#top"
+          ><span class="qq"><i>Q</i><b>Q</b></span
+          ><span class="logo-dot">.</span
+          ><span class="logo-name">XABAR</span></a
+        >
+        <nav id="navMenu" class="main-nav">
+          <a class="active" href="index.html#top" data-i18n="home">Главная</a
+          ><a href="index.html#news" data-i18n="news">Новости</a
+          ><a href="index.html#politics" data-i18n="politics">Политика</a
+          ><a href="index.html#society" data-i18n="society">Общество</a
+          ><a href="index.html#sport" data-i18n="sport">Спорт</a>
+        </nav>
+        <div class="header-tools">
+          <button class="icon-btn search-toggle" aria-label="Поиск">
+            <i class="bi bi-search"></i>
+          </button>
+          <div class="weather">
+            <i class="bi bi-sun-fill"></i
+            ><span>Nukus <strong>23°C</strong></span>
+          </div>
+          <select class="language-select" aria-label="Язык">
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+            <option value="kaa">KAA</option></select
+          ><button
+            class="icon-btn menu-toggle"
+            aria-label="Меню"
+            aria-expanded="false"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="search-bar">
+            <label
+              ><i class="bi bi-search"></i
+              ><input
+                id="newsSearch"
+                type="search"
+                placeholder="Поиск по новостям..."
+                data-i18n="search"
+            /></label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="news-ticker" aria-label="Срочные новости">
+      <div class="container ticker-inner">
+        <div class="ticker-window">
+          <div class="ticker-track">
+            <span>В Нукусе стартовала неделя городских инициатив</span><b>•</b
+            ><span
+              >Обновлённое расписание общественного транспорта уже
+              доступно</span
+            ><b>•</b><span>Спортсмены региона вернулись с новыми наградами</span
+            ><b>•</b><span>В Нукусе стартовала неделя городских инициатив</span
+            ><b>•</b
+            ><span
+              >Обновлённое расписание общественного транспорта уже
+              доступно</span
+            ><b>•</b><span>Спортсмены региона вернулись с новыми наградами</span
+            ><b>•</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="container article-layout">
+      <article class="article-content">
+        <div class="article-meta">
+          <span id="articleCategory">Новости</span
+          ><time id="articleDate">31 августа 2026</time>
+        </div>
+        <h1 id="articleTitle">Новость QQ.XABAR</h1>
+        <p class="article-lead" id="articleLead">
+          Подробности важного события — в материале QQ.XABAR.
+        </p>
+        <img
+          id="articleImage"
+          class="article-image"
+          src="images/main-news.jpg"
+          alt="Изображение к новости"
+        />
+        <div class="article-text">
+          <p>
+            Событие вызвало заметный интерес у жителей региона. Представители
+            профильных организаций поделились главными деталями и рассказали о
+            ближайших планах.
+          </p>
+          <p>
+            Новая инициатива направлена на развитие городской среды, поддержку
+            местных сообществ и создание дополнительных возможностей для людей.
+            Работа над проектом продолжится с учётом мнений жителей.
+          </p>
+          <h2>Что будет дальше</h2>
+          <p>
+            В ближайшее время будет опубликован подробный план мероприятий.
+            QQ.XABAR продолжит следить за развитием ситуации и оперативно
+            сообщать о важных обновлениях.
+          </p>
+        </div>
+        <div class="article-actions">
+          <button onclick="history.back()">
+            <i class="bi bi-arrow-left"></i> Назад</button
+          ><button
+            onclick="navigator.share ? navigator.share({title:document.title,url:location.href}) : navigator.clipboard.writeText(location.href)"
+          >
+            <i class="bi bi-share"></i> Поделиться
+          </button>
+        </div>
+      </article>
+      <aside class="article-aside">
+        <span class="eyebrow">Читайте также</span>
+        <h2>Последние новости</h2>
+        <a href="index.html#news"
+          >Все свежие материалы <i class="bi bi-arrow-right"></i
+        ></a>
+      </aside>
+    </main>
+    <footer>
+      <div class="container copyright">
+        © 2026 QQ.XABAR. Все права защищены.
+      </div>
+    </footer>
+    <script src="detail.js"></script>
+    <script src="header.js"></script>
+    <script src="enhancements.js"></script>
+  </body>
+</html>
